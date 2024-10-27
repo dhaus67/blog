@@ -1,0 +1,48 @@
+baseURL: https://blog.dhaus.io
+languageCode: en-us
+title: dhaus blog
+theme: ["PaperMod"]
+
+enableRobotsTXT: true
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  title: dhaus blog
+  description: Blog about all things programming, and life.
+  keywords: [Blog, Portfolio]
+  author: dhaus
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  UseHugoToc: true
+  homeInfoParams:
+    Title: "Welcome to my personal blog!"
+    Content: >
+      I'm Daniel, an engineer currently working at [re:cap](https://re-cap.com), a fintech startup.
+
+
+      I'm mostly interested about different programming languages such as Go, Rust, Zig.
+
+
+      I write here about things I find interesting, mostly related to programming or life in general.
+  socialIcons:
+    - name: github
+      url: "https://github.com/dhaus67"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/daniel-haus/"
+menu:
+  main:
+    - identifier: home
+      name: home
+      url: /
+      weight: 5
+    - identifier: posts
+      name: blog posts
+      url: /posts/
+      weight: 10
